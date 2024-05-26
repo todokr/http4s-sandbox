@@ -10,7 +10,6 @@ test("Sample", async () => {
   expect(screen.getByRole("heading")).toHaveTextContent("Hello, Guest");
   const button = screen.getByRole("button", { name: "Get User" });
   await user.click(button);
-  await screen.debug();
   // expect(await screen.findByText("Loading...")).toBeInTheDocument();
   expect(await screen.findByRole("heading")).toHaveTextContent(
     "Hello, John Maverick",

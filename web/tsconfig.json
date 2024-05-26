@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
     /* Bundler mode */
@@ -24,18 +20,13 @@
     /* OreOre */
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
+      "@/*": ["src/*"],
       "@api-client/*": [
         "../api-client/build/smithy/source/typescript-client-codegen/src"
       ]
-    },
+    }
   },
-  "include": [
-    "src",
-    "vitest-setup.ts"
-  ],
+  "include": ["src", "vitest-setup.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
