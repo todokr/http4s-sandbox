@@ -1,0 +1,21 @@
+{
+    "version": "2.0",
+    "sources": [
+        "../server/src/main/smithy"
+    ],
+    "maven": {
+        "dependencies": [
+            "software.amazon.smithy.typescript:smithy-typescript-codegen:0.21.0",
+            "com.disneystreaming.alloy:alloy-core:0.3.8",
+            "com.disneystreaming.smithy4s:smithy4s-protocol:0.18.20"
+        ],
+        "repositories": []
+    },
+    "plugins": {
+        "typescript-client-codegen": {
+            "package": "@todokr/smithy-client",
+            "packageManager": "npm",
+            "packageVersion": "0.0.1"
+        }
+    }
+}

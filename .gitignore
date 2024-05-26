@@ -1,0 +1,9 @@
+.bloop
+.bsp
+.metals
+.idea
+api-client/build/
+build/
+target/
+web/coverage/
+web/__snapshots__/
